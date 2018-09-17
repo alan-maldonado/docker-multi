@@ -15,6 +15,6 @@ after_success:
   - docker build -t alanmaldonado/multi-worker ./worker
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
   - docker push alanmaldonado/multi-client
-  - docker push alanmaldonado/multi-client
-  - docker push alanmaldonado/multi-client
-  - docker push alanmaldonado/multi-client
+  - docker push alanmaldonado/multi-nginx
+  - docker push alanmaldonado/multi-server
+  - docker push alanmaldonado/multi-worker
